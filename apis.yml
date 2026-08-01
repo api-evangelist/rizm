@@ -1,7 +1,27 @@
 aid: rizm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rizm.png
 name: Rizm
-description: Rizm is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: RIZM is a holistic energy optimization platform for industrial enterprises,
+  operated by Kerith GmbH of Münster, Germany. It integrates data from production,
+  energy procurement, and infrastructure into a digital twin, then optimizes energy
+  system design and day-to-day operational decisions — from long-term infrastructure
+  investment and power purchase agreements to short-term asset dispatch and production
+  scheduling — helping manufacturers cut energy costs and emissions at the same time.
+  Named customers include BMW Group, Bosch, Mercedes-Benz, Volkswagen, and BSH. The
+  product is delivered as a login-gated web application (app.rizm.de) with authenticated
+  documentation; no public developer API, OpenAPI, or SDK surface is published at this
+  time. Backed by Point Nine, this profile was surfaced from the venture portfolio graph.
 url: https://raw.githubusercontent.com/api-evangelist/rizm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Energy
+- Energy Optimization
+- Industrial
+- Manufacturing
+- Sustainability
+- Digital Twin
+- Sector Coupling
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rizm-domain-security.yml
 - type: Website
   url: https://www.rizm.de
+- type: Login
+  url: https://app.rizm.de
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
